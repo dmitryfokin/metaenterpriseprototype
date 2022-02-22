@@ -2,7 +2,7 @@
   "name": "metarhia",
   "version": "2.0.0",
   "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
-  "description": "Metarhia Application Example",
+  "description": "Metarhia Application Prototype Enterprise",
   "license": "MIT",
   "keywords": [
     "metarhia",
@@ -65,6 +65,8 @@
     "impress": "^2.6.6",
     "metasql": "^2.0.1",
     "pg": "^8.7.1",
-    "redis": "^3.1.2"
+    "redis": "^3.1.2",
+    "metaenterprise": "git@github.com:dmitryfokin/metaenterprise.git",
+    "metaform": "git@github.com:dmitryfokin/metaform.git"
   }
 }
