@@ -3,10 +3,7 @@ async () => {
     console.debug('Load enterprise...');
   }
 
-  domain.enterprise = new npm.metaenterprise.Enterprise(
-    { model: application.schemas.model }
+  npm.metaenterprise.Enterprise.load(
+    { model: application.schemas.model, domain, npm, config, application }
   );
-  //domain.masterData = new npm.metaenterprise.MasterDataMeneger();
-  // const options = { ...config.database, console };
-  // db.pg = new npm.metaenterprise.Database(options);
 };
