@@ -6,7 +6,10 @@
   },
   metadata: {
     type: 'enterprise',
-    description: 'Prototype enterprise application on Metarhia',
+    description: {
+      en: 'Prototype enterprise application on Metarhia',
+      ru: 'Прототип приложения предприятия на технологическом стеке Metarhia',
+    },
   },
   fn: {
     type: 'enterpriseScript',
@@ -15,7 +18,7 @@
         console.debug('Before load enterprise application');
       };
       const beforeLoadSession = async (failure = false) => {
-        console.debug('Before load enterprise application');
+        console.debug('Before load user session');
       };
     },
   },

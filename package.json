@@ -67,6 +67,9 @@
     "pg": "^8.7.1",
     "redis": "^3.1.2",
     "metaenterprise": "git@github.com:dmitryfokin/metaenterprise.git",
-    "metaform": "git@github.com:dmitryfokin/metaform.git"
+    "metaform": "git@github.com:dmitryfokin/metaform.git",
+    "metaformwebclient": "git@github.com:dmitryfokin/metaformwebclient.git",
+    "metacollections": "git@github.com:dmitryfokin/metacollections.git",
+    "metawatch": "^1.0.5"
   }
 }
