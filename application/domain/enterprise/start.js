@@ -4,6 +4,6 @@ async () => {
   }
 
   npm.metaenterprise.Enterprise.load(
-    { model: application.schemas.model, domain, npm, config, application }
+    { application: application.schemas.application }
   );
 };
