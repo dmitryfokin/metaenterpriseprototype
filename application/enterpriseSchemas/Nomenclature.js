@@ -1,9 +1,4 @@
 ({
-  Struct: {
-    store: 'memory',
-    scope: 'application',
-    allow: 'read',
-  },
   metadata: {
     type: 'enterpriseMasterData',
     name: 'Nomenclature',
@@ -12,25 +7,27 @@
       ru: 'материальные активы, услуги, основные средства, продукция, полуфабрикаты',
     },
     codeDefinition: { type: 'string', length: 9 },
-    descriptionDefinition:  { length: 50 },
+    descriptionDefinition: { length: 50 },
     representationDefinition: {},
-    props: {
+    fields: {
       isNew: {
         type: 'boolean',
         name: 'isNew',
-      }
+        description: {
+          en: 'Is new',
+          ru: 'Новая позиция',
+        },
+      },
     },
-
-  },
-  fn: {
-    type: 'enterpriseScript',
-    module() {
-      const beforeSave = async (failure = false) => {
-        console.debug('Before save ');
-      };
-      const afterSave = async (failure = false) => {
-        console.debug('Before load enterprise application');
-      };
+    tables: {
+    },
+    hooks: {
+      beforeSave: async (failure = false) => {
+        console.debug('Before save Nomenclature');
+      },
+      afterSave: async (failure = false) => {
+        console.debug('After save Nomenclature');
+      },
     },
   },
 });
